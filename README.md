@@ -14,3 +14,16 @@ yarn create vite
 yarn install
 yarn dev
 ```
+
+# 🍔 ESLint
+- https://eslint.org/docs/latest/use/getting-started#quick-start
+
+```shell
+yarn create @eslint/config
+```
+
+### 설치 후 확인
+
+```shell
+yarn eslint .
+```
