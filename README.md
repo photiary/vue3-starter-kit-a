@@ -44,6 +44,7 @@ yarn eslint .
 ```shell
 yarn add --dev --exact prettier
 
+# .prettierrc 에서 prettier.config.js 로 수정
 node --eval "fs.writeFileSync('prettier.config.js','')"
 
 node --eval "fs.writeFileSync('.prettierignore','# Ignore artifacts:\nbuild\ncoverage\n')"
