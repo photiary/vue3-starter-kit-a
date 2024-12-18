@@ -10,6 +10,7 @@ export default defineConfig({
       '@': fileURLToPath(new URL('./src', import.meta.url)),
     },
   },
+  // https://vite.dev/config/shared-options#css-preprocessoroptions
   css: {
     preprocessorOptions: {
       scss: {

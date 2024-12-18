@@ -37,12 +37,10 @@ $color-prettier: #344651;
 $color-pinia: #ffd859;
 $color-sass: #cd6799;
 
-// filter 관련 Mixin 정의
 @mixin drop-shadow($color) {
   filter: drop-shadow(0 0 2em $color);
 }
 
-// 공통 스타일 분리
 .logo {
   height: 6em;
   padding: 1.5em;
