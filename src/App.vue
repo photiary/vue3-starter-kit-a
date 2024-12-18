@@ -16,8 +16,11 @@ import HelloWorld from './components/HelloWorld.vue';
     <a href="https://prettier.io/" target="_blank">
       <img src="/prettier.svg" class="logo prettier" alt="Prettier logo" />
     </a>
+    <a href="https://pinia.vuejs.org/" target="_blank">
+      <img src="/pinia.svg" class="logo pinia" alt="Pinia logo" />
+    </a>
   </div>
-  <HelloWorld msg="Vite + Vue + ESLint + Prettier" />
+  <HelloWorld msg="Vite + Vue + ESLint + Prettier + Pinia" />
 </template>
 
 <style scoped>
@@ -38,5 +41,8 @@ import HelloWorld from './components/HelloWorld.vue';
 }
 .logo.prettier:hover {
   filter: drop-shadow(0 0 2em #344651);
+}
+.logo.pinia:hover {
+  filter: drop-shadow(0 0 2em #ffd859);
 }
 </style>
