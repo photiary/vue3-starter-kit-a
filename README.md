@@ -94,3 +94,11 @@ yarn prettier . --write
 ```shell
 yarn add pinia
 ```
+
+# 🌭Vue Router
+
+- https://router.vuejs.org/installation.html
+
+```shell
+yarn add vue-router
+```

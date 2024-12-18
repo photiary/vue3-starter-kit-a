@@ -19,8 +19,11 @@ import HelloWorld from './components/HelloWorld.vue';
     <a href="https://pinia.vuejs.org/" target="_blank">
       <img src="/pinia.svg" class="logo pinia" alt="Pinia logo" />
     </a>
+    <a href="https://router.vuejs.org/" target="_blank">
+      <img src="./assets/vue.svg" class="logo vue" alt="Vue Router logo" />
+    </a>
   </div>
-  <HelloWorld msg="Vite + Vue + ESLint + Prettier + Pinia" />
+  <HelloWorld msg="Vite + Vue + ESLint + Prettier + Pinia + Vue Router" />
 </template>
 
 <style scoped>
