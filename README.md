@@ -85,3 +85,11 @@ yarn add --dev eslint-config-prettier
 ```shell
 yarn prettier . --write
 ```
+
+# 🍍 Pinia
+
+- https://pinia.vuejs.org/getting-started.html
+
+```shell
+yarn add pinia
+```
