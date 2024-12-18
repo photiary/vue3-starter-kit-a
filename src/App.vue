@@ -20,11 +20,16 @@
     <a href="https://router.vuejs.org/" target="_blank">
       <img src="./assets/vue.svg" class="logo vue" alt="Vue Router logo" />
     </a>
+    <a href="https://sass-lang.com/" target="_blank">
+      <img src="/sass.svg" class="logo sass" alt="Sass logo" />
+    </a>
   </div>
-  <router-view msg="Vite + Vue + ESLint + Prettier + Pinia + Vue Router" />
+  <router-view
+    msg="Vite + Vue + ESLint + Prettier + Pinia + Vue Route + Sass"
+  />
 </template>
 
-<style scoped>
+<style scoped lang="scss">
 .logo {
   height: 6em;
   padding: 1.5em;
@@ -45,5 +50,8 @@
 }
 .logo.pinia:hover {
   filter: drop-shadow(0 0 2em #ffd859);
+}
+.logo.sass:hover {
+  filter: drop-shadow(0 0 2em #cd6799);
 }
 </style>
