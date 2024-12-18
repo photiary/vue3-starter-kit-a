@@ -10,8 +10,14 @@ import HelloWorld from './components/HelloWorld.vue';
     <a href="https://vuejs.org/" target="_blank">
       <img src="./assets/vue.svg" class="logo vue" alt="Vue logo" />
     </a>
+    <a href="https://eslint.org/" target="_blank">
+      <img src="/eslint.svg" class="logo eslint" alt="ESLint logo" />
+    </a>
+    <a href="https://prettier.io/" target="_blank">
+      <img src="/prettier.svg" class="logo prettier" alt="Prettier logo" />
+    </a>
   </div>
-  <HelloWorld msg="Vite + Vue" />
+  <HelloWorld msg="Vite + Vue + ESLint + Prettier" />
 </template>
 
 <style scoped>
@@ -26,5 +32,11 @@ import HelloWorld from './components/HelloWorld.vue';
 }
 .logo.vue:hover {
   filter: drop-shadow(0 0 2em #42b883aa);
+}
+.logo.eslint:hover {
+  filter: drop-shadow(0 0 2em #8080f2);
+}
+.logo.prettier:hover {
+  filter: drop-shadow(0 0 2em #344651);
 }
 </style>
