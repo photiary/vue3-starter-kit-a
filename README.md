@@ -102,3 +102,14 @@ yarn add pinia
 ```shell
 yarn add vue-router
 ```
+
+# 🍿 SASS
+
+- https://classic.yarnpkg.com/en/package/sass-embedded
+- https://vite.dev/config/shared-options#css-preprocessoroptions
+
+Vite 문서에 추천으로 sass 대신 sass-embedded 를 사용
+
+```shell
+yarn add --dev sass-embedded
+```
