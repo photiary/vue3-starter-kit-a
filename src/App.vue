@@ -30,28 +30,47 @@
 </template>
 
 <style scoped lang="scss">
+$color-default: #646cffaa;
+$color-vue: #42b883aa;
+$color-eslint: #8080f2;
+$color-prettier: #344651;
+$color-pinia: #ffd859;
+$color-sass: #cd6799;
+
+// filter 관련 Mixin 정의
+@mixin drop-shadow($color) {
+  filter: drop-shadow(0 0 2em $color);
+}
+
+// 공통 스타일 분리
 .logo {
   height: 6em;
   padding: 1.5em;
   will-change: filter;
   transition: filter 300ms;
-}
-.logo:hover {
-  filter: drop-shadow(0 0 2em #646cffaa);
-}
-.logo.vue:hover {
-  filter: drop-shadow(0 0 2em #42b883aa);
-}
-.logo.eslint:hover {
-  filter: drop-shadow(0 0 2em #8080f2);
-}
-.logo.prettier:hover {
-  filter: drop-shadow(0 0 2em #344651);
-}
-.logo.pinia:hover {
-  filter: drop-shadow(0 0 2em #ffd859);
-}
-.logo.sass:hover {
-  filter: drop-shadow(0 0 2em #cd6799);
+
+  &:hover {
+    @include drop-shadow($color-default);
+  }
+
+  &.vue:hover {
+    @include drop-shadow($color-vue);
+  }
+
+  &.eslint:hover {
+    @include drop-shadow($color-eslint);
+  }
+
+  &.prettier:hover {
+    @include drop-shadow($color-prettier);
+  }
+
+  &.pinia:hover {
+    @include drop-shadow($color-pinia);
+  }
+
+  &.sass:hover {
+    @include drop-shadow($color-sass);
+  }
 }
 </style>
