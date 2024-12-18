@@ -1,6 +1,4 @@
-<script setup>
-import HelloWorld from './components/HelloWorld.vue';
-</script>
+<script setup></script>
 
 <template>
   <div>
@@ -23,7 +21,7 @@ import HelloWorld from './components/HelloWorld.vue';
       <img src="./assets/vue.svg" class="logo vue" alt="Vue Router logo" />
     </a>
   </div>
-  <HelloWorld msg="Vite + Vue + ESLint + Prettier + Pinia + Vue Router" />
+  <router-view msg="Vite + Vue + ESLint + Prettier + Pinia + Vue Router" />
 </template>
 
 <style scoped>
