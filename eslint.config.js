@@ -2,6 +2,7 @@ import globals from 'globals';
 import pluginJs from '@eslint/js';
 import pluginVue from 'eslint-plugin-vue';
 import eslintConfigPrettier from 'eslint-config-prettier';
+import eslintPluginPrettierRecommended from 'eslint-plugin-prettier/recommended';
 
 /** @type {import('eslint').Linter.Config[]} */
 export default [
@@ -20,4 +21,6 @@ export default [
   },
   // https://github.com/prettier/eslint-config-prettier?tab=readme-ov-file#installation
   eslintConfigPrettier,
+  // https://github.com/prettier/eslint-plugin-prettier?tab=readme-ov-file#configuration-new-eslintconfigjs
+  eslintPluginPrettierRecommended,
 ];
