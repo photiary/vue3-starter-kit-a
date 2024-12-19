@@ -1,6 +1,6 @@
 # 환경 구성
 
-`Vite` + `Vue` + `ESLint` + `Prettier`
+`Vite` + `Vue` + `ESLint` + `Prettier` + `Pinia` + `Vue Router` + `Sass` + `Tailwindcss`
 
 # 🍕 프로젝트 생성
 
@@ -126,7 +126,7 @@ yarn add --dev sass-embedded
 
 - https://tailwindcss.com/docs/guides/vite#vue
 
-🚨 Vite 프로젝트 생성에 만들어진 src/style.css의 body, #app 등 초기 CSS는 모두 제거해야 Tailwindcss의 preflight가 적용된다.
+🚨 Vite 프로젝트 생성에 만들어진 `src/style.css`의 `body`, `#app` 등 초기 CSS는 모두 제거해야 Tailwindcss의 preflight가 적용된다.
 
 ```shell
 yarn add --dev tailwindcss postcss autoprefixer
@@ -149,4 +149,12 @@ yarn add --dev prettier prettier-plugin-tailwindcss
 
 ```html
 class="p-0 bg-white"
+```
+
+🚨 Intellij 에러가 발생하면 `@tailwindcss/language-server` 최신 버전으로 설치하고 'Languages & Frameworks > Style Sheets > Tailwindcss' 에서 Language Server를 변경한다.
+
+> Tailwind CSS: (node:7436) ExperimentalWarning: CommonJS module ... 생략
+
+```shell
+npm install -g @tailwindcss/language-server@0.0.27
 ```
