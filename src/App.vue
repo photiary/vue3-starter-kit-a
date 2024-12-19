@@ -23,9 +23,16 @@
     <a href="https://sass-lang.com/" target="_blank">
       <img src="/sass.svg" class="logo sass" alt="Sass logo" />
     </a>
+    <a href="https://tailwindcss.com/" target="_blank">
+      <img
+        src="/tailwindcss.svg"
+        class="logo tailwindcss"
+        alt="Tailwindcss logo"
+      />
+    </a>
   </div>
   <router-view
-    msg="Vite + Vue + ESLint + Prettier + Pinia + Vue Route + Sass"
+    msg="Vite + Vue + ESLint + Prettier + Pinia + Vue Route + Sass + Tailwindcss"
   />
 </template>
 
@@ -36,6 +43,7 @@ $color-eslint: #8080f2;
 $color-prettier: #344651;
 $color-pinia: #ffd859;
 $color-sass: #cd6799;
+$color-tailwindcss: #38bdf8;
 
 @mixin drop-shadow($color) {
   filter: drop-shadow(0 0 2em $color);
@@ -69,6 +77,10 @@ $color-sass: #cd6799;
 
   &.sass:hover {
     @include drop-shadow($color-sass);
+  }
+
+  &.tailwindcss:hover {
+    @include drop-shadow($color-tailwindcss);
   }
 }
 </style>
