@@ -8,7 +8,7 @@ export default [
   {files: ["**/*.{js,mjs,cjs,vue}"]},
   // https://eslint.org/docs/latest/use/configure/ignore
   // 빌드 파일 무시
-  {ignores: ["dist/*"]},
+  { ignores: ['**/dist/**'] },
   {languageOptions: { globals: globals.browser }},
   pluginJs.configs.recommended,
   ...pluginVue.configs["flat/essential"],
