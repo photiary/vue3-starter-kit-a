@@ -68,13 +68,21 @@ const config = {
 export default config;
 ```
 
-### ESLint와 충돌나는 규칙을 위해 eslint-config-prettier 설치
+### eslint-config-prettier ESLint와 충돌나는 규칙을 위해 설치
 
 - https://prettier.io/docs/en/integrating-with-linters
 - https://github.com/prettier/eslint-config-prettier
 
 ```shell
 yarn add --dev eslint-config-prettier
+```
+
+### eslint-plugin-prettier Prettier 규칙을 ESLint로 실행하기 위해 설치
+
+- https://github.com/prettier/eslint-plugin-prettier?tab=readme-ov-file#installation
+
+```shell
+yarn add --dev eslint-plugin-prettier
 ```
 
 ### 설치 후 확인
