@@ -121,3 +121,32 @@ Vite 문서에 추천으로 sass 대신 sass-embedded 를 사용
 ```shell
 yarn add --dev sass-embedded
 ```
+
+# 🌊 tailwindcss
+
+- https://tailwindcss.com/docs/guides/vite#vue
+
+🚨 Vite 프로젝트 생성에 만들어진 src/style.css의 body, #app 등 초기 CSS는 모두 제거해야 Tailwindcss의 preflight가 적용된다.
+
+```shell
+yarn add --dev tailwindcss postcss autoprefixer
+
+npx tailwindcss init -p
+```
+
+### Tailwindcss의 prettier
+
+- https://tailwindcss.com/docs/editor-setup#automatic-class-sorting-with-prettier
+- https://github.com/tailwindlabs/prettier-plugin-tailwindcss
+
+```shell
+yarn add --dev prettier prettier-plugin-tailwindcss
+```
+
+### 설치 후 확인
+
+리소스 추가 후 자동으로 `class="bg-white p-0"` 클래스 순서가 변경되는 것을 확인한다. (필요에 따라 IDE 재시작)
+
+```html
+class="p-0 bg-white"
+```
