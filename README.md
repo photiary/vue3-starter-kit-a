@@ -171,6 +171,8 @@ yarn install
 
 ### .gitignore
 
+- https://yarnpkg.com/getting-started/qa#which-files-should-be-gitignored
+
 yarn 버전업에 따른 git 제외 대상 추가
 
 ```
