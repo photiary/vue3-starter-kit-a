@@ -215,3 +215,9 @@ import '@/assets/style.scss';
 ```shell
 pnpm storybook
 ```
+
+# Vitest
+
+```shell
+pnpm add -D vitest
+```
