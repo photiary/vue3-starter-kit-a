@@ -159,28 +159,15 @@ class="p-0 bg-white"
 npm install -g @tailwindcss/language-server@0.0.27
 ```
 
-# yarn v4
+# yarn > pnpm 으로 전환
 
-https://yarnpkg.com/getting-started/install#updating-yarn
+2024-12-21 시점에 Vite 6 환경에서 Storybook 을 `yarn`으로 설치하면 ESM 관련 오류가 발생하여 `pnpm`으로 전환한다.
+
+- https://pnpm.io/installation#using-corepack
+
+🚨 윈도우 환경에서는 보안 Widows Defender 설정에서 프로젝트 폴더를 제외시키고, 관리자 권한으로 커맨드창을 실행한다.
 
 ```shell
-yarn set version stable
-
-yarn install
-```
-
-### .gitignore
-
-- https://yarnpkg.com/getting-started/qa#which-files-should-be-gitignored
-
-yarn 버전업에 따른 git 제외 대상 추가
-
-```
-.yarn/*
-!.yarn/cache
-!.yarn/patches
-!.yarn/plugins
-!.yarn/releases
-!.yarn/sdks
-!.yarn/versions
+corepack enable pnpm
+corepack use pnpm@latest
 ```

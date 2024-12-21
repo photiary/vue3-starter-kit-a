@@ -9,6 +9,9 @@
       <a href="https://vuejs.org/" target="_blank">
         <img src="/vue.svg" :class="$style.vue" alt="Vue logo" />
       </a>
+      <a href="https://pnpm.io" target="_blank">
+        <img src="/pnpm.svg" :class="$style.pnpm" alt="PNPM logo" />
+      </a>
       <a href="https://eslint.org/" target="_blank">
         <img src="/eslint.svg" :class="$style.eslint" alt="ESLint logo" />
       </a>
@@ -33,7 +36,7 @@
       </a>
     </div>
     <router-view
-      msg="Vite + Vue + ESLint + Prettier + Pinia + Vue Route + Sass + Tailwindcss"
+      msg="Vite + Vue + pnpm + ESLint + Prettier + Pinia + Vue Route + Sass + Tailwindcss"
     />
   </div>
 </template>
@@ -46,6 +49,7 @@ $color-prettier: #344651;
 $color-pinia: #ffd859;
 $color-sass: #cd6799;
 $color-tailwindcss: #38bdf8;
+$color-pnpm: #f9ad00;
 
 @mixin drop-shadow($color) {
   filter: drop-shadow(0 0 2em $color);
@@ -88,6 +92,10 @@ $color-tailwindcss: #38bdf8;
 
     &.tailwindcss:hover {
       @include drop-shadow($color-tailwindcss);
+    }
+
+    &.pnpm:hover {
+      @include drop-shadow($color-pnpm);
     }
   }
 }
