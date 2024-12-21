@@ -33,4 +33,4 @@ simpleInstance.interceptors.response.use(
   }
 );
 
-export default { api: simpleInstance };
+export default simpleInstance;

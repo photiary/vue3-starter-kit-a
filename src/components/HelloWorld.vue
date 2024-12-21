@@ -1,11 +1,17 @@
 <script setup>
+import { onMounted } from 'vue';
 import { useCounterStore } from '@/stores/counter.js';
 
 const counterStore = useCounterStore();
-const dotEnv = import.meta.env.VITE_DUMMY;
 
 defineProps({
   msg: String,
+});
+
+const dotEnv = import.meta.env.VITE_DUMMY;
+
+onMounted(() => {
+  counterStore.fetchCount();
 });
 </script>
 
