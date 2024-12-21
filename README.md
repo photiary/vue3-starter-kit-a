@@ -158,29 +158,3 @@ class="p-0 bg-white"
 ```shell
 npm install -g @tailwindcss/language-server@0.0.27
 ```
-
-# yarn v4
-
-https://yarnpkg.com/getting-started/install#updating-yarn
-
-```shell
-yarn set version stable
-
-yarn install
-```
-
-### .gitignore
-
-- https://yarnpkg.com/getting-started/qa#which-files-should-be-gitignored
-
-yarn 버전업에 따른 git 제외 대상 추가
-
-```
-.yarn/*
-!.yarn/cache
-!.yarn/patches
-!.yarn/plugins
-!.yarn/releases
-!.yarn/sdks
-!.yarn/versions
-```
