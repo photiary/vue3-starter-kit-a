@@ -221,3 +221,19 @@ pnpm storybook
 ```shell
 pnpm add -D vitest
 ```
+
+# Axios
+
+- https://axios-http.com/docs/intro
+
+```shell
+pnpm add axios
+```
+
+### axios-mock-adapter
+
+- https://www.npmjs.com/package/axios-mock-adapter
+
+```shell
+pnpm add -D axios-mock-adapter
+```
