@@ -1,6 +1,6 @@
 # 환경 구성
 
-`Vite` + `Vue` + `ESLint` + `Prettier` + `Pinia` + `Vue Router` + `Sass` + `Tailwindcss`
+`Vite` + `Vue` + `ESLint` + `Prettier` + `Pinia` + `Vue Router` + `Sass` + `Tailwindcss` + `Storybook` + `Vitest`
 
 # 🍕 프로젝트 생성
 
@@ -214,4 +214,10 @@ import '@/assets/style.scss';
 
 ```shell
 pnpm storybook
+```
+
+# Vitest
+
+```shell
+pnpm add -D vitest
 ```
