@@ -1,6 +1,6 @@
 # 환경 구성
 
-`Vite` + `Vue` + `ESLint` + `Prettier` + `Pinia` + `Vue Router` + `Sass` + `Tailwindcss` + `Storybook` + `Vitest`
+`Vite` + `Vue` + `ESLint` + `Prettier` + `Pinia` + `Vue Router` + `Sass` + `Tailwindcss` + `Storybook` + `Vitest` + `Axios`
 
 # 🍕 프로젝트 생성
 
@@ -220,4 +220,20 @@ pnpm storybook
 
 ```shell
 pnpm add -D vitest
+```
+
+# Axios
+
+- https://axios-http.com/docs/intro
+
+```shell
+pnpm add axios
+```
+
+### axios-mock-adapter
+
+- https://www.npmjs.com/package/axios-mock-adapter
+
+```shell
+pnpm add -D axios-mock-adapter
 ```
