@@ -171,3 +171,47 @@ npm install -g @tailwindcss/language-server@0.0.27
 corepack enable pnpm
 corepack use pnpm@latest
 ```
+
+# 📕 Storybook
+
+- https://storybook.js.org/docs/get-started/frameworks/vue3-vite
+
+설치 후 Storybook 서버가 자동 실행된다. 🚨 설치 시 생성되는 예제 리소스(src/stories)는 프로젝트 시작시 제거
+
+```shell
+pnpm dlx storybook@latest init
+```
+
+### Pinia
+
+- https://storybook.js.org/recipes/pinia
+
+`.storybook/preview.js`
+
+```javascript
+import { createApp } from 'vue';
+import { createPinia } from 'pinia';
+import App from '@/App.vue';
+
+const pinia = createPinia();
+createApp(App).use(pinia);
+```
+
+### CSS (Tailwindcss, Sass)
+
+- https://storybook.js.org/recipes/tailwindcss
+- https://storybook.js.org/recipes/sass
+
+`@storybook/addon-styling-webpack` 설치는 불필요
+
+`.storybook/preview.js`
+
+```javascript
+import '@/assets/style.scss';
+```
+
+### Storybook 실행
+
+```shell
+pnpm storybook
+```

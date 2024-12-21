@@ -35,8 +35,15 @@
         />
       </a>
     </div>
+    <a href="https://storybook.js.org/" target="_blank">
+      <img
+        src="/storybook.svg"
+        :class="$style.storybook"
+        alt="Storybook logo"
+      />
+    </a>
     <router-view
-      msg="Vite + Vue + pnpm + ESLint + Prettier + Pinia + Vue Route + Sass + Tailwindcss"
+      msg="Vite + Vue + pnpm + ESLint + Prettier + Pinia + Vue Route + Sass + Tailwindcss + Storybook"
     />
   </div>
 </template>
@@ -50,6 +57,7 @@ $color-pinia: #ffd859;
 $color-sass: #cd6799;
 $color-tailwindcss: #38bdf8;
 $color-pnpm: #f9ad00;
+$color-storybook: #ff4785;
 
 @mixin drop-shadow($color) {
   filter: drop-shadow(0 0 2em $color);
@@ -96,6 +104,10 @@ $color-pnpm: #f9ad00;
 
     &.pnpm:hover {
       @include drop-shadow($color-pnpm);
+    }
+
+    &.storybook:hover {
+      @include drop-shadow($color-storybook);
     }
   }
 }
