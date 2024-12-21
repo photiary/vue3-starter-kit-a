@@ -2,6 +2,7 @@
 import { useCounterStore } from '@/stores/counter.js';
 
 const counterStore = useCounterStore();
+const dotEnv = import.meta.env.VITE_DUMMY;
 
 defineProps({
   msg: String,
@@ -11,6 +12,7 @@ defineProps({
 <template>
   <div :class="$style.container">
     <h1>{{ msg }}</h1>
+    <h2>{{ dotEnv }}</h2>
     <div :class="$style.card">
       <button type="button" @click="counterStore.increaseCount()">
         count is {{ counterStore.count }}
