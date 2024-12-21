@@ -44,9 +44,12 @@
       <a href="https://vitest.dev/" target="_blank">
         <img src="/vitest.svg" :class="$style.vitest" alt="Vitest logo" />
       </a>
+      <a href="https://axios-http.com/" target="_blank">
+        <img src="/axios.svg" :class="$style.axios" alt="Axios logo" />
+      </a>
     </div>
     <router-view
-      msg="Vite + Vue + pnpm + ESLint + Prettier + Pinia + Vue Route + Sass + Tailwindcss + Storybook + Vitest"
+      msg="Vite + Vue + pnpm + ESLint + Prettier + Pinia + Vue Route + Sass + Tailwindcss + Storybook + Vitest + Axios"
     />
   </div>
 </template>
@@ -62,6 +65,7 @@ $color-tailwindcss: #38bdf8;
 $color-pnpm: #f9ad00;
 $color-storybook: #ff4785;
 $color-vitest: #729b1b;
+$color-axios: #5a29e4;
 
 @mixin drop-shadow($color) {
   filter: drop-shadow(0 0 2em $color);
@@ -116,6 +120,10 @@ $color-vitest: #729b1b;
 
     &.vitest:hover {
       @include drop-shadow($color-vitest);
+    }
+
+    &.axios:hover {
+      @include drop-shadow($color-axios);
     }
   }
 }
