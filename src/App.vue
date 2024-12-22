@@ -1,130 +1,115 @@
-<script setup></script>
-
 <template>
   <div :class="$style.container">
     <div :class="$style['icon-box']">
-      <a href="https://vite.dev" target="_blank">
-        <img src="/vite.svg" alt="Vite logo" />
-      </a>
-      <a href="https://vuejs.org/" target="_blank">
-        <img src="/vue.svg" :class="$style.vue" alt="Vue logo" />
-      </a>
-      <a href="https://pnpm.io" target="_blank">
-        <img src="/pnpm.svg" :class="$style.pnpm" alt="PNPM logo" />
-      </a>
-      <a href="https://eslint.org/" target="_blank">
-        <img src="/eslint.svg" :class="$style.eslint" alt="ESLint logo" />
-      </a>
-      <a href="https://prettier.io/" target="_blank">
-        <img src="/prettier.svg" :class="$style.prettier" alt="Prettier logo" />
-      </a>
-      <a href="https://pinia.vuejs.org/" target="_blank">
-        <img src="/pinia.svg" :class="$style.pinia" alt="Pinia logo" />
-      </a>
-      <a href="https://router.vuejs.org/" target="_blank">
-        <img src="/vue.svg" :class="$style.vue" alt="Vue Router logo" />
-      </a>
-      <a href="https://sass-lang.com/" target="_blank">
-        <img src="/sass.svg" :class="$style.sass" alt="Sass logo" />
-      </a>
-      <a href="https://tailwindcss.com/" target="_blank">
-        <img
-          src="/tailwindcss.svg"
-          :class="$style.tailwindcss"
-          alt="Tailwindcss logo"
-        />
-      </a>
-      <a href="https://storybook.js.org/" target="_blank">
-        <img
-          src="/storybook.svg"
-          :class="$style.storybook"
-          alt="Storybook logo"
-        />
-      </a>
-      <a href="https://vitest.dev/" target="_blank">
-        <img src="/vitest.svg" :class="$style.vitest" alt="Vitest logo" />
-      </a>
-      <a href="https://axios-http.com/" target="_blank">
-        <img src="/axios.svg" :class="$style.axios" alt="Axios logo" />
-      </a>
+      <LibLinkButton
+        v-for="lib in libList"
+        :key="lib.name"
+        :name="lib.name"
+        :href="lib.href"
+        :version="lib.version"
+        :icon="lib.icon"
+        :color="lib.color"
+      />
     </div>
-    <router-view
-      msg="Vite + Vue + pnpm + ESLint + Prettier + Pinia + Vue Route + Sass + Tailwindcss + Storybook + Vitest + Axios"
-    />
+    <router-view msg="Hello Vue3 Starter Kit" />
   </div>
 </template>
 
+<script setup>
+import LibLinkButton from '@/components/LibLinkButton.vue';
+
+const libList = [
+  {
+    name: 'Vite',
+    href: 'https://vite.dev',
+    version: '6',
+    icon: 'vite.svg',
+    color: '#646cff',
+  },
+  {
+    name: 'Vue',
+    href: 'https://vuejs.org/',
+    version: '3',
+    icon: 'vue.svg',
+    color: '#42b883',
+  },
+  {
+    name: 'pnpm',
+    href: 'https://pnpm.io',
+    version: '8',
+    icon: 'pnpm.svg',
+    color: '#f9ad00',
+  },
+  {
+    name: 'ESLint',
+    href: 'https://eslint.org/',
+    version: '9',
+    icon: 'eslint.svg',
+    color: '#8080f2',
+  },
+  {
+    name: 'Prettier',
+    href: 'https://prettier.io/',
+    version: '3',
+    icon: 'prettier.svg',
+    color: '#344651',
+  },
+  {
+    name: 'Pinia',
+    href: 'https://pinia.vuejs.org/',
+    version: '2',
+    icon: 'pinia.svg',
+    color: '#ffd859',
+  },
+  {
+    name: 'Vue Router',
+    href: 'https://router.vuejs.org/',
+    version: '4',
+  },
+  {
+    name: 'Sass',
+    href: 'https://sass-lang.com/',
+    version: '1',
+    icon: 'sass.svg',
+    color: '#cd6799',
+  },
+  {
+    name: 'Tailwind CSS',
+    href: 'https://tailwindcss.com/',
+    version: '3',
+    icon: 'tailwindcss.svg',
+    color: '#38bdf8',
+  },
+  {
+    name: 'Storybook',
+    href: 'https://storybook.js.org/',
+    version: '8',
+    icon: 'storybook.svg',
+    color: '#ff4785',
+  },
+  {
+    name: 'Vitest',
+    href: 'https://vitest.dev/',
+    version: '2',
+    icon: 'vitest.svg',
+    color: '#729b1b',
+  },
+  {
+    name: 'Axios',
+    href: 'https://axios-http.com/',
+    version: '1',
+    icon: 'axios.svg',
+    color: '#5a29e4',
+  },
+];
+</script>
+
 <style module lang="scss">
-$color-default: #646cffaa;
-$color-vue: #42b883aa;
-$color-eslint: #8080f2;
-$color-prettier: #344651;
-$color-pinia: #ffd859;
-$color-sass: #cd6799;
-$color-tailwindcss: #38bdf8;
-$color-pnpm: #f9ad00;
-$color-storybook: #ff4785;
-$color-vitest: #729b1b;
-$color-axios: #5a29e4;
-
-@mixin drop-shadow($color) {
-  filter: drop-shadow(0 0 2em $color);
-}
-
 .container {
   @apply flex h-screen flex-col items-center justify-center;
 
   .icon-box {
-    @apply flex items-center justify-center;
-  }
-
-  img {
-    @apply h-32 p-4 transition duration-300;
-    will-change: filter;
-
-    &:hover {
-      @include drop-shadow($color-default);
-    }
-
-    &.vue:hover {
-      @include drop-shadow($color-vue);
-    }
-
-    &.eslint:hover {
-      @include drop-shadow($color-eslint);
-    }
-
-    &.prettier:hover {
-      @include drop-shadow($color-prettier);
-    }
-
-    &.pinia:hover {
-      @include drop-shadow($color-pinia);
-    }
-
-    &.sass:hover {
-      @include drop-shadow($color-sass);
-    }
-
-    &.tailwindcss:hover {
-      @include drop-shadow($color-tailwindcss);
-    }
-
-    &.pnpm:hover {
-      @include drop-shadow($color-pnpm);
-    }
-
-    &.storybook:hover {
-      @include drop-shadow($color-storybook);
-    }
-
-    &.vitest:hover {
-      @include drop-shadow($color-vitest);
-    }
-
-    &.axios:hover {
-      @include drop-shadow($color-axios);
-    }
+    @apply flex flex-wrap justify-center;
   }
 }
 </style>
