@@ -37,6 +37,12 @@ onMounted(() => {
     <p :class="$style['read-the-docs']">
       Click on the package logos to learn more
     </p>
+    <p>
+      Check out Awesome Vite for
+      <a href="https://github.com/vitejs/awesome-vite#templates" target="_blank"
+        >community maintained templates</a
+      >
+    </p>
     <div :class="$style.card">
       <button type="button" @click="counterStore.increaseCount()">
         API count is {{ counterStore.count }}. 👆Click me.
