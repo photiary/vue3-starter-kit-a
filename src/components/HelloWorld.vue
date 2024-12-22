@@ -8,8 +8,6 @@ defineProps({
   msg: String,
 });
 
-const dotEnv = import.meta.env.VITE_DUMMY;
-
 onMounted(() => {
   counterStore.fetchCount();
 });
@@ -18,18 +16,12 @@ onMounted(() => {
 <template>
   <div :class="$style.container">
     <h1>{{ msg }}</h1>
-    <h2>{{ dotEnv }}</h2>
-    <div :class="$style.card">
-      <button type="button" @click="counterStore.increaseCount()">
-        count is {{ counterStore.count }}
-      </button>
-      <p>
-        Edit
-        <code>components/HelloWorld.vue</code> to test HMR
-      </p>
-    </div>
     <p>
-      Check out
+      Edit
+      <code>components/HelloWorld.vue</code> to test HMR
+    </p>
+    <p>
+      Check out original
       <a href="https://vuejs.org/guide/quick-start.html#local" target="_blank"
         >create-vue</a
       >, the official Vue + Vite starter
@@ -43,14 +35,19 @@ onMounted(() => {
       >.
     </p>
     <p :class="$style['read-the-docs']">
-      Click on the Vite and Vue logos to learn more
+      Click on the package logos to learn more
     </p>
+    <div :class="$style.card">
+      <button type="button" @click="counterStore.increaseCount()">
+        API count is {{ counterStore.count }}. 👆Click me.
+      </button>
+    </div>
   </div>
 </template>
 
 <style module lang="scss">
 .container {
-  @apply flex flex-col items-center justify-center gap-2;
+  @apply flex flex-col items-center justify-center gap-2 text-slate-900;
 
   h1 {
     @apply text-2xl;
@@ -60,16 +57,20 @@ onMounted(() => {
     @apply flex flex-col items-center justify-center;
 
     button {
-      @apply rounded-lg bg-rose-400 p-4 font-bold text-orange-200 transition duration-300;
+      @apply rounded-lg bg-indigo-500 px-4 py-2 font-bold text-slate-100 transition duration-300;
 
       &:hover {
-        filter: drop-shadow(0 0 2em theme('colors.rose.400'));
+        filter: drop-shadow(0 0 2em theme('colors.indigo.500'));
       }
     }
   }
 
+  a {
+    @apply text-green-500;
+  }
+
   .read-the-docs {
-    @apply text-blue-500;
+    @apply text-indigo-500;
   }
 }
 </style>

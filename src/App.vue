@@ -1,7 +1,7 @@
 <template>
   <div :class="$style.container">
     <div :class="$style['icon-box']">
-      <LibLinkButton
+      <PackageButton
         v-for="lib in libList"
         :key="lib.name"
         :name="lib.name"
@@ -11,12 +11,12 @@
         :color="lib.color"
       />
     </div>
-    <router-view msg="Hello Vue3 Starter Kit" />
+    <router-view msg="Hello Vue 3 Starter Kit" />
   </div>
 </template>
 
 <script setup>
-import LibLinkButton from '@/components/LibLinkButton.vue';
+import PackageButton from '@/components/PackageButton.vue';
 
 const libList = [
   {
@@ -109,7 +109,7 @@ const libList = [
   @apply flex h-screen flex-col items-center justify-center;
 
   .icon-box {
-    @apply flex flex-wrap justify-center;
+    @apply flex flex-wrap justify-center gap-2;
   }
 }
 </style>

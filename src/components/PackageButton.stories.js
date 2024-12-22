@@ -1,9 +1,9 @@
-import LibLinkButton from './LibLinkButton.vue';
+import PackageButton from './PackageButton.vue';
 
 // More on how to set up stories at: https://storybook.js.org/docs/writing-stories
 export default {
-  title: 'Components/LibLinkButton',
-  component: LibLinkButton,
+  title: 'Components/PackageButton',
+  component: PackageButton,
   tags: ['autodocs'],
   // Use `fn` to spy on the onClick arg, which will appear in the actions panel once invoked: https://storybook.js.org/docs/essentials/actions#action-args
 };
