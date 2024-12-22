@@ -159,7 +159,7 @@ class="p-0 bg-white"
 npm install -g @tailwindcss/language-server@0.0.27
 ```
 
-# yarn > pnpm 으로 전환
+# 🏈 yarn > pnpm 으로 전환
 
 2024-12-21 시점에 Vite 6 환경에서 Storybook 을 `yarn`으로 설치하면 ESM 관련 오류가 발생하여 `pnpm`으로 전환한다.
 
@@ -216,13 +216,13 @@ import '@/assets/style.scss';
 pnpm storybook
 ```
 
-# Vitest
+# 🧂 Vitest
 
 ```shell
 pnpm add -D vitest
 ```
 
-# Axios
+# 🥓 Axios
 
 - https://axios-http.com/docs/intro
 
@@ -237,3 +237,52 @@ pnpm add axios
 ```shell
 pnpm add -D axios-mock-adapter
 ```
+
+# 🥚 검토 패키지
+- https://gs.statcounter.com/
+- https://ossinsight.io/
+- https://stateofjs.com/en-US
+
+### etc.
+
+- Lodash https://lodash.com
+- VueUse https://vueuse.org
+- timeago.js https://github.com/hustcc/timeago.js
+- dayjs https://day.js.org
+
+### Icon
+
+- Heroicons (Tailwind CSS) https://heroicons.com
+- Tabler Icons https://tabler.io/icons
+- Pictogrammers (Vuetify) https://pictogrammers.com
+- Font Awesome https://fontawesome.com
+- Google Fonts https://fonts.google.com/icons
+- Remix Icon https://remixicon.com
+- Phosphor Icons https://phosphoricons.com
+- Lucide https://lucide.dev
+
+### Chart
+https://ossinsight.io/collections/javascript-charting/
+
+- Vue Flow https://vueflow.dev
+
+### Animation
+
+- anime.js https://animejs.com/
+- Motion https://motion.dev/
+- canvas-confetti https://github.com/catdad/canvas-confetti
+- Lottie https://lottiefiles.com/
+
+### Script
+
+- rimraf https://github.com/isaacs/rimraf#readme
+
+  `package.json` build 후 생성되는 dist 폴더, 리소스를 삭제하는 스크립트
+  ```json
+  {
+    "scripts": {
+      "clean": "rimraf dist .turbo"
+    }
+  }
+  ```
+  
