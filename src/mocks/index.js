@@ -4,6 +4,4 @@ import counterMocks from '@/mocks/api/counter.js';
 
 const mock = new AxiosMockAdapter(axios, { delayResponse: 200 });
 
-if (import.meta.env.VITE_ENABLE_AXIOS_MOCK === 'true') {
-  counterMocks(mock);
-}
+counterMocks(mock);
