@@ -218,6 +218,8 @@ pnpm storybook
 
 # 🧂 Vitest
 
+- https://vitest.dev/guide/
+
 ```shell
 pnpm add -D vitest
 ```
@@ -239,9 +241,11 @@ pnpm add -D axios-mock-adapter
 ```
 
 # 🥚 검토 패키지
-- https://gs.statcounter.com/
-- https://ossinsight.io/
-- https://stateofjs.com/en-US
+
+- statcounter https://gs.statcounter.com/
+- bestofjs https://bestofjs.org/
+- OSS insight https://ossinsight.io/
+- State of JavaScript https://stateofjs.com/en-US
 
 ### etc.
 
@@ -260,6 +264,7 @@ pnpm add -D axios-mock-adapter
 - Remix Icon https://remixicon.com
 - Phosphor Icons https://phosphoricons.com
 - Lucide https://lucide.dev
+- Boxicons https://boxicons.com/
 
 ### Chart
 https://ossinsight.io/collections/javascript-charting/
@@ -270,8 +275,11 @@ https://ossinsight.io/collections/javascript-charting/
 
 - anime.js https://animejs.com/
 - Motion https://motion.dev/
-- canvas-confetti https://github.com/catdad/canvas-confetti
 - Lottie https://lottiefiles.com/
+- mo.js https://mojs.github.io/
+- canvas-confetti https://github.com/catdad/canvas-confetti
+- particles.js https://vincentgarreau.com/particles.js
+- tsParticles https://particles.js.org
 
 ### Script
 
@@ -285,4 +293,20 @@ https://ossinsight.io/collections/javascript-charting/
     }
   }
   ```
-  
+
+# 🍳 Reference & Knowledge
+
+- CSS Gradient https://cssgradient.io
+- Tailwind CSS Color Generator https://uicolors.app/create
+- CSS Bounce-in Animation https://codepen.io/nelledejones/pen/gOOPWrK
+
+- HyperUI https://www.hyperui.dev
+
+- CSS-TRICKS https://css-tricks.com
+- 웹 프로그래밍 튜토리얼 https://poiemaweb.com
+- 1분 코딩 https://studiomeal.com/blog
+- patterns https://www.patterns.dev
+
+### 보안
+
+- OWASP https://owasp.org/
