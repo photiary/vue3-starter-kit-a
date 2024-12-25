@@ -1,7 +1,7 @@
 import { createApp } from 'vue';
 import { createPinia } from 'pinia';
 import App from '@/App.vue';
-import '@/assets/style.scss';
+import '@/styles/style.scss';
 import '@/mocks';
 
 const pinia = createPinia();
