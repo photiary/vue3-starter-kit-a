@@ -102,6 +102,13 @@ const libList = [
     icon: 'axios.svg',
     color: '#5a29e4',
   },
+  {
+    name: 'Vue DevTools',
+    href: 'https://devtools.vuejs.org/',
+    version: '7',
+    icon: 'vue-devtools.svg',
+    color: '#2DF8D0',
+  },
 ];
 </script>
 
