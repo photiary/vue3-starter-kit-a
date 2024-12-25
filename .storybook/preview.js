@@ -1,11 +1,13 @@
-import { createApp } from 'vue';
+import { setup } from '@storybook/vue3';
 import { createPinia } from 'pinia';
-import App from '@/App.vue';
 import '@/styles/style.scss';
 import '@/mocks';
+import router from '@/router';
 
 const pinia = createPinia();
-createApp(App).use(pinia);
+setup((app) => {
+  app.use(pinia).use(router);
+});
 
 /** @type { import('@storybook/vue3').Preview } */
 const preview = {
