@@ -240,6 +240,14 @@ pnpm add axios
 pnpm add -D axios-mock-adapter
 ```
 
+# 🧈 Vue DevTools
+
+- https://devtools.vuejs.org/guide/vite-plugin
+
+```shell
+pnpm add -D vite-plugin-vue-devtools
+```
+
 # 🥚 검토 패키지
 
 - statcounter https://gs.statcounter.com/
