@@ -1,3 +1,4 @@
+// TODO 참고 후 삭제한다.
 import { describe, it, expect, beforeEach } from 'vitest';
 import { setActivePinia, createPinia } from 'pinia';
 import { useCounterStore } from './counter.js';

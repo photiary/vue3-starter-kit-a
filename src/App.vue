@@ -1,4 +1,5 @@
 <template>
+  <!-- TODO 참고 후 수정한다. -->
   <div :class="$style.container">
     <div :class="$style['icon-box']">
       <PackageButton

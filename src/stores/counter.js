@@ -1,3 +1,4 @@
+// TODO 참고 후 삭제한다.
 import { ref } from 'vue';
 import { acceptHMRUpdate, defineStore } from 'pinia';
 import { api } from '@/plugins/api';
