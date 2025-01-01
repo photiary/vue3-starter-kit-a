@@ -210,6 +210,8 @@ createApp(App).use(pinia);
 import '@/assets/style.scss';
 ```
 
+🚨 새로운 컴포넌트와 *.stories.js를 추가한 경우, 바로 Tailwind CSS가 적용되지 않는 경우, Storybook을 재기동 한다.
+
 ### Storybook 실행
 
 ```shell
